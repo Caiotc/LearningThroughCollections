@@ -77,6 +77,10 @@ namespace ListaSomenteLeitura
 		{
 			return $"Curso: {nome},Tempo:{TempoTotal},Aula{string.Join(",",aulas)}";
 		}
+		public bool EstaMatriculado(Aluno aluno)
+		{
+			return alunos.Contains(aluno);
+		}
 
 
 	}

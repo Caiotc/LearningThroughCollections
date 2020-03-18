@@ -29,9 +29,21 @@ namespace SetModel
             {
                 Console.WriteLine(item);
             }
+            //No formato "[nome:,Matricula:]
 
+            //Iprimir: "O aluno a1 esta matriulado"
+            Console.WriteLine($"O aluno:{a1.Nome} esta matriculado?");
+            //criar um metodo EstaMAtriculado
+            Console.WriteLine(csharpColecoes.EstaMatriculado(a1));
+            Aluno tonini = new Aluno("Vanessa Tonini",34672);
+            Console.WriteLine("Tonini esta matriculadi?");
+            Console.WriteLine(csharpColecoes.EstaMatriculado(tonini));
 
-
+            Console.WriteLine("a1 == a TOnini");
+            Console.WriteLine(a1==tonini);
+            //O que ocorreu?a1 é igual a tonini
+            Console.WriteLine("a1 é equals a Tonini");
+            Console.WriteLine(a1.Equals(tonini));
         }
     }
 }
