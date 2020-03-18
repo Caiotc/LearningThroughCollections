@@ -5,10 +5,19 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 
+
 namespace ListaSomenteLeitura
 {
-    class Curso
+    public class Curso
     {
+		private ISet<Aluno> alunos = new HashSet<Aluno>();
+		public IList<Aluno> Alunos
+		{
+			get
+			{
+				return new ReadOnlyCollection<Aluno>(alunos.ToList());
+			}
+		}
 		private IList<Aula> aulas;
 		private string instrutor;
 		private string nome;
@@ -20,7 +29,7 @@ namespace ListaSomenteLeitura
 			this.aulas = new List<Aula>();
 		}
 
-		internal void Adiciona(Aula aula)
+		public void Adiciona(Aula aula)
 		{
 			this.aulas.Add(aula);
 		}
@@ -42,7 +51,13 @@ namespace ListaSomenteLeitura
 			get { return instrutor; }
 			set { instrutor = value; }
 		}
-		public int TempoTotal
+
+        public void Matricula(Aluno a1)
+        {
+			alunos.Add(a1);
+        }
+
+        public int TempoTotal
 		{ 
 			get 
 			{

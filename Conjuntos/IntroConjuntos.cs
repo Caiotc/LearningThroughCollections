@@ -5,7 +5,7 @@ namespace Conjuntos
 {
     class IntroConjuntos
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //Sets == COnjunto
             //Conjuntos

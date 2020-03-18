@@ -42,7 +42,7 @@ namespace LearningThroughCollections
             Console.ReadKey();
         }
     }
-    class Aula : IComparable
+    public class Aula : IComparable
     {
         //Aula herda de object
         //O toString é o de Object namespace.NomeDaClasse
