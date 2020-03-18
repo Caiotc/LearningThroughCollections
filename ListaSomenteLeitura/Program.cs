@@ -13,7 +13,23 @@ namespace LearningThroughCollections
         {
             Curso csharColecoes = new Curso("C# Collections", "Marcelo Silva");
             csharColecoes.Adiciona(new Aula("Trabalhando com listas", 21));
-            Imprimir(csharColecoes.Aulas);
+            //Imprimir(csharColecoes.Aulas);
+            //Adiciona 2 aulas
+            csharColecoes.Adiciona(new Aula("Criando uma aula ", 20));
+            csharColecoes.Adiciona(new Aula("Modelando com coleções", 19));
+            //Imprimir
+            //Imprimir(csharColecoes.Aulas);
+            //csharColecoes.Aulas.Sort();Ilist não contem nenhum tipo de Sort
+
+            //Copiar a lista para outra lista
+            List<Aula> aulaCopiadas = new List<Aula>(csharColecoes.Aulas);
+            //Ordenar a copia
+            aulaCopiadas.Sort();
+            Imprimir(aulaCopiadas);
+            //Totalizar o tempo do Curso
+            Console.WriteLine(csharColecoes.TempoTotal);
+            Console.WriteLine(csharColecoes);
+            
         }
 
         private static void Imprimir(IList<Aula> list)

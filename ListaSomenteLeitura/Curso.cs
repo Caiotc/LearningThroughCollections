@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 
 namespace ListaSomenteLeitura
@@ -40,6 +41,26 @@ namespace ListaSomenteLeitura
 		{
 			get { return instrutor; }
 			set { instrutor = value; }
+		}
+		public int TempoTotal
+		{ 
+			get 
+			{
+				//int total = 0;
+				//foreach (var item in aulas)
+				//{
+				//	total += item.Tempo;
+				//}
+				//return total;
+				//LINQ = language Integrated Query
+				//Consulta integrada de linguagem
+				return aulas.Sum(x => x.Tempo);
+			} 
+
+		}
+		public override string ToString()
+		{
+			return $"Curso: {nome},Tempo:{TempoTotal},Aula{string.Join(",",aulas)}";
 		}
 
 
