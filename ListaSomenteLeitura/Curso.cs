@@ -10,6 +10,8 @@ namespace ListaSomenteLeitura
 {
     public class Curso
     {
+
+		private IDictionary<int, Aluno> dicionarioAlunos = new Dictionary<int, Aluno>();
 		private ISet<Aluno> alunos = new HashSet<Aluno>();
 		public IList<Aluno> Alunos
 		{
@@ -55,6 +57,7 @@ namespace ListaSomenteLeitura
         public void Matricula(Aluno a1)
         {
 			alunos.Add(a1);
+			this.dicionarioAlunos.Add(a1.NumeroMatricula, a1);	
         }
 
         public int TempoTotal
@@ -82,6 +85,18 @@ namespace ListaSomenteLeitura
 			return alunos.Contains(aluno);
 		}
 
+        public Aluno BuscaMatriculado(int v)
+        {
 
+			Aluno aluno;
+			this.dicionarioAlunos.TryGetValue(v, out aluno);
+			return aluno;
+
+		}
+
+		public void SubstituiAluno(Aluno aluno)
+		{
+			this.dicionarioAlunos[aluno.NumeroMatricula] = aluno;	
+		}
 	}
 }
