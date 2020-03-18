@@ -5,13 +5,15 @@ VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningThroughCollections", "LearningThroughCollections.csproj", "{AA67ACD7-241C-4C99-960E-A44E38D3E0E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListasDeObjetos", "ListasDeObjetos\ListasDeObjetos.csproj", "{E0AE4AE8-A591-4340-88FF-F2313A9E0498}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListasDeObjetos", "ListasDeObjetos\ListasDeObjetos.csproj", "{E0AE4AE8-A591-4340-88FF-F2313A9E0498}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{AB08C28F-2246-4512-81E7-5C36E93C925C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListasDeStrings", "ListasStrings\ListasDeStrings.csproj", "{CD1055F0-C3CA-44D4-8F44-C4256472C65A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaSomenteLeitura", "ListaSomenteLeitura\ListaSomenteLeitura.csproj", "{F67B5209-F293-4D4D-99A7-B7C65B06FD59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListaSomenteLeitura", "ListaSomenteLeitura\ListaSomenteLeitura.csproj", "{F67B5209-F293-4D4D-99A7-B7C65B06FD59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conjuntos", "Conjuntos\Conjuntos.csproj", "{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -127,6 +129,26 @@ Global
 		{F67B5209-F293-4D4D-99A7-B7C65B06FD59}.Release|x64.Build.0 = Release|Any CPU
 		{F67B5209-F293-4D4D-99A7-B7C65B06FD59}.Release|x86.ActiveCfg = Release|Any CPU
 		{F67B5209-F293-4D4D-99A7-B7C65B06FD59}.Release|x86.Build.0 = Release|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Debug|ARM.Build.0 = Debug|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Debug|x64.Build.0 = Debug|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Debug|x86.Build.0 = Debug|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Release|ARM.ActiveCfg = Release|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Release|ARM.Build.0 = Release|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Release|ARM64.Build.0 = Release|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Release|x64.ActiveCfg = Release|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Release|x64.Build.0 = Release|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Release|x86.ActiveCfg = Release|Any CPU
+		{6E6631F3-0058-4F7C-BFE1-CFE2AB2971E8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
